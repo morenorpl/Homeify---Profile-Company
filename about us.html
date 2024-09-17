@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="about us.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="bg-transparent border-b-2 border-gray-300">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a
+          href="../index.html"
+          class="flex items-center rtl:space-x-reverse text-black text-2xl font-semibold whitespace-nowrap"
+        >
+          <img
+            class="w-8"
+            src="../assets/homeify-logo.png"
+            class="h-8"
+            alt="Homeify Logo"
+          />
+          <span
+            class="self-center text-2xl font-semibold whitespace-nowrap text-red-500"
+            >ome</span
+          >ify
+        </a>
+        <div class="flex md:order-2">
+          <button
+            type="button"
+            data-collapse-toggle="navbar-search"
+            aria-controls="navbar-search"
+            aria-expanded="false"
+            class="md:hidden text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 rounded-lg text-sm p-2.5 me-1"
+          >
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 20 20"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+              />
+            </svg>
+            <span class="sr-only">Search</span>
+          </button>
+          <div class="relative hidden md:block">
+            <div
+              class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+            >
+              <svg
+                class="w-4 h-4 text-gray-500"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                />
+              </svg>
+              <span class="sr-only">Search icon</span>
+            </div>
+            <input
+              type="text"
+              id="search-navbar"
+              class="block w-full p-2 ps-10 text-sm text-gray-700 border border-gray-300 rounded-sm bg-gray-300 focus:ring-red-500 focus:border-red-500 dark:bg-gray"
+              placeholder="Search..."
+            />
+          </div>
+          <button
+            data-collapse-toggle="navbar-search"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            aria-controls="navbar-search"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-search"
+        >
+          <div class="relative mt-3 md:hidden">
+            <div
+              class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+            >
+              <svg
+                class="w-4 h-4 text-gray-500"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                />
+              </svg>
+            </div>
+            <input
+              type="text"
+              id="search-navbar"
+              class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-300 focus:ring-red-500 focus:border-red-500"
+              placeholder="Search..."
+            />
+          </div>
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-300 md:space-x-5 lg:space-x-8 xl:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent"
+          >
+            <li>
+              <a
+                href="../index.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-400 md:hover:bg-transparent md:hover:text-gray-400 md:p-0"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-black bg-red-500 rounded md:bg-transparent md:text-red-500 md:p-0"
+                aria-current="page"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="../product.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-400 md:hover:bg-transparent md:hover:text-gray-400 md:p-0"
+                >Furniture</a
+              >
+            </li>
+            <li>
+              <a
+                href="../contact.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-400 md:hover:bg-transparent md:hover:text-gray-400 md:p-0"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- content -->
+
+    <section class="text-gray-600 body-font bg-gray-100"></section>
+
+        <div class="container-top flex px-5 pt-10 pb-20 flex-col items-center bg-gray-100 border-b-2 border-gray-300 text-center">
+            <img class="size-32" src="assets/homeify-logo-bigger.png" alt="">
+            <h1 class="text-5xl font-bold tracking-wide mb-3">
+                <span class="text-red-500">Home</span>ify
+            </h1>
+            <p class="text-base mb-10">Beautifying Homes Is What We Do.</p>
+            <div class="img-wrapper w-11/12 h-3/6 overflow-hidden">
+                <img class="hover:scale-105 transition-transform ease-in-out duration-500" src="assets/background-about us.png" alt="">
+            </div>
+        </div>
+    <!-- about us 1 -->
+    <section
+    class="text-gray-600 body-font bg-gray-100 w-full flex justify-center"
+  >
+    <div
+      class="container w-full mx-0 flex px-5 py-10 sm:py-10 md:py-20 lg:py-20 xl:py-20 xl:flex-row lg:flex-row md:flex-row sm:flex-col flex-col justify-between xl:gap-32 lg:gap-24 md:gap-14 sm:gap-0 gap-0 items-center"
+    >
+      <div
+        class="h-auto w-full lg:flex-grow md:w-1/2 flex flex-col mb-16 md:mb-0 items-right text-right place-content-end items-end"
+      >
+        <p class="text-xs sm:text-base md:text-base lg:text-lg xl:text-lg mb-4 text-red-500 font-semibold">We prioritize</p>
+        <h1 class="text-black font-bold text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-5xl mb-8">Beauty & Comfort.</h1>
+        <hr
+          class="w-16 h-1 mb-5 sm:mb-5 md:mb-5 lg:mb-5 xl:mb-10 bg-red-500 border-0 text-right"
+        />
+        <ul class="text-gray-800 mt-6">
+          <li class="mb-8">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, at. Aliquid voluptate odit consequuntur aspernatur laudantium, ex non sunt consectetur commodi aperiam voluptas numquam doloremque deserunt? Rerum, aliquam porro culpa dolorum ad quaerat tempora ex saepe vero quod asperiores reprehenderit vel iure cupiditate eveniet ab delectus exercitationem aspernatur? Aspernatur, harum.
+          </li>
+          <li class="mb-8"></li>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis perferendis nihil quis quia nostrum quidem aperiam, amet alias, architecto rem asperiores dicta. Mollitia!
+        </li>
+        </ul>
+      </div>
+      <div
+        class="w-full sm:w-full md:w-96 lg:w-96 xl:w-5/12 h-full bg-gray-200 p-0 items-center flex justify-center"
+      >
+        <img
+          class="object-cover object-center rounded size-full"
+          alt="hero"
+          src="../assets/img-about-us-1.png"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- about us 2 -->
+  <section
+  class="text-gray-600 body-font bg-gray-100 w-full flex justify-center"
+>
+  <div
+    class="container w-full mx-0 flex px-5 py-10 sm:py-10 md:py-20 lg:py-20 xl:py-20 xl:flex-row-reverse lg:flex-row-reverse md:flex-row-reverse sm:flex-col flex-col justify-between xl:gap-32 lg:gap-24 md:gap-14 sm:gap-0 gap-0 items-center"
+  >
+    <div
+      class="h-auto w-full lg:flex-grow md:w-1/2 flex flex-col mb-16 md:mb-0 items-left text-left place-content-start items-starplace-content-start"
+    >
+      <p class="text-xs sm:text-base md:text-base lg:text-lg xl:text-lg mb-4 text-red-500 font-semibold">But we never neglect</p>
+      <h1 class="text-black font-bold text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-5xl mb-8">The Quality.</h1>
+      <hr
+        class="w-16 h-1 mb-5 sm:mb-5 md:mb-5 lg:mb-5 xl:mb-10 bg-red-500 border-0 text-left"
+      />
+      <ul class="text-gray-800 mt-6">
+        <li class="mb-8">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, at. Aliquid voluptate odit consequuntur aspernatur laudantium, ex non sunt consectetur commodi aperiam voluptas numquam doloremque deserunt? Rerum, aliquam porro culpa dolorum ad quaerat tempora ex saepe vero quod asperiores reprehenderit vel iure cupiditate eveniet ab delectus exercitationem aspernatur? Aspernatur, harum.
+        </li>
+        <li class="mb-8"></li>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis perferendis nihil quis quia nostrum quidem aperiam, amet alias, architecto rem asperiores dicta. Mollitia!
+      </li>
+      </ul>
+    </div>
+    <div
+      class="w-full sm:w-full md:w-96 lg:w-96 xl:w-5/12 h-full bg-gray-200 p-0 items-center flex justify-center"
+    >
+      <img
+        class="object-cover object-center rounded size-full"
+        alt="hero"
+        src="../assets/img-about-us-2.png"
+      />
+    </div>
+  </div>
+</section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About <span>Homeify.</span></h3>
+          <p>
+            We are a local furniture company that spreads modern, simplistic,
+            and premium-quality furnitures throughout the world.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p>Email: homeify@gmail.com</p>
+          <p>Telepon: 123-1234-123</p>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <a href="https://www.facebook.com/">Facebook</a>
+          <a href="https://x.com/">Twitter</a>
+          <a href="https://www.instagram.com/">Instagram</a>
+        </div>
+        <div class="footer-section">
+          <h3>Sign Up</h3>
+          <form class="signup-form">
+            <input type="text" placeholder="Name" required />
+            <input type="email" placeholder="Email Adress" required />
+            <input type="password" placeholder="Password" required />
+            <button class="btn-daftar" type="submit">Sign Up</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Homeify. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+  </body>
+</html>

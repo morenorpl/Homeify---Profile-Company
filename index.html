@@ -1,0 +1,3081 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homeify</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-900">
+    <nav class="bg-transparent border-transparent">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a
+          href="index.html"
+          class="flex items-center rtl:space-x-reverse text-white text-2xl font-semibold whitespace-nowrap"
+        >
+          <img
+            class="w-8"
+            src="assets/homeify-logo.png"
+            class="h-8"
+            alt="Homeify Logo"
+          />
+          <span
+            class="self-center text-2xl font-semibold whitespace-nowrap text-red-500"
+            >ome</span
+          >ify
+        </a>
+        <div class="flex md:order-2">
+          <button
+            type="button"
+            data-collapse-toggle="navbar-search"
+            aria-controls="navbar-search"
+            aria-expanded="false"
+            class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 me-1"
+          >
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 20 20"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+              />
+            </svg>
+            <span class="sr-only">Search</span>
+          </button>
+          <div class="relative hidden md:block">
+            <div
+              class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+            >
+              <svg
+                class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                />
+              </svg>
+              <span class="sr-only">Search icon</span>
+            </div>
+            <input
+              type="text"
+              id="search-navbar"
+              class="block w-full p-2 ps-10 text-sm text-gray-300 border border-gray-900 rounded-sm bg-gray-800 focus:ring-red-500 focus:border-red-500 dark:bg-gray"
+              placeholder="Search..."
+            />
+          </div>
+          <button
+            data-collapse-toggle="navbar-search"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-search"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-search"
+        >
+          <div class="relative mt-3 md:hidden">
+            <div
+              class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+            >
+              <svg
+                class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                />
+              </svg>
+            </div>
+            <input
+              type="text"
+              id="search-navbar"
+              class="block w-full p-2 ps-10 text-sm text-gray-200 border border-gray-300 rounded-lg bg-gray-900 focus:ring-red-500 focus:border-red-500"
+              placeholder="Search..."
+            />
+          </div>
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-900 md:space-x-5 lg:space-x-8 xl:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-white bg-red-500 rounded md:bg-transparent md:text-red-500 md:p-0"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="about us.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-950 md:hover:bg-transparent md:hover:text-gray-400 md:p-0 dark:text-white"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="product.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-950 md:hover:bg-transparent md:hover:text-gray-400 md:p-0 dark:text-white"
+                >Furniture</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-950 md:hover:bg-transparent md:hover:text-gray-400 md:p-0 dark:text-white"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="text-gray-600 body-font">
+      <div
+        class="container mx-auto justify-center flex px-5 xl:px-16 lg:px-16 md:px-10 sm:px-5 pt-24 md:flex-row flex-col items-center"
+      >
+        <div
+          class="lg:flex-grow lg:text-left lg:w-3/4 md:w-3/4 pr-50 xl:pr-10 lg:pr-0 md:pr-16 flex flex-col md:items-start md:text-left mb-0 xl:mb-14 lg:mb-14 md:mb-14 sm:mb-0 items-center text-center"
+        >
+          <h1
+            class="w-4/5 xl:w-12/12 lg:w-3/4 md:w-80 sm:w-4/5 text-4xl xl:text-6xl lg:text-4xl md:text-3xl sm:text-4xl text-20 title-font mb-1 text-white font-bold"
+          >
+            Make your home more beautiful than ever.
+          </h1>
+          <p
+            class="w-4/5 xl:w-7/12 xl:text-xl lg:w-96 lg:text-lg md:w-80 md:text-base sm:w-3/4 sm:text-base mb-8 leading-relaxed text-gray-300 font-light mt-5"
+          >
+            Beautify your home and choose from a wide variety of modern
+            simplistic premium quality furniture in Homeify.
+          </p>
+          <div
+            class="container items-start gap-1 lg:flex-grow lg:text-left place-content-center xl:place-content-start lg:place-content-start md:place-content-start sm:place-content-center lg:pr-44 md:pr-0 sm:pr-0 flex flex-row md:items-start md:text-left mb-0 md:mb-0 text-center"
+          >
+            <button
+              type="button"
+              class="text-white bg-red-500 hover:bg-red-800 focus:ring-1 focus:ring-red-300 font-medium rounded-md text-sm px-7 py-3.5 me-2 mb-2"
+            >
+              <a href="product.html"> EXPLORE </a>
+            </button>
+            <button
+              type="button"
+              class="px-7 lg:px-7 md:px-7 sm:px-7 text-red-500 bg-transparent ring-1 ring-red-500 hover:ring-red-300 hover:text-red-300 focus:ring-1 focus:ring-red-900 focus:text-red-900 font-medium rounded-md text-sm py-3.5 me-2 mb-2"
+            >
+              <a class="w-16" target="_blank" href="https://api.whatsapp.com/send?phone=621231234123">BUY NOW</a>
+            </button>
+          </div>
+        </div>
+        <div class="max-w-lg">
+          <img
+            class="object-cover object-center rounded scale-90 xl:scale-125 lg:scale-125 md:scale-y-125 md:scale-x-125 sm:scale-90"
+            id="img-hero"
+            alt="hero"
+            src="assets/hero-img.png"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured -->
+    <div
+      class="container h-full bg-white py-36 flex grid-cols-2 grid-rows-2 sm:flex md:grid lg:flex xl:flex gap-10 xl:gap-10 lg:gap-5 md:gap-5 sm:gap-5 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-5 max-w-full flex-col sm:flex-col md:flex-col lg:flex-row xl:flex-row items-center xl:items-start justify-center xl:justify-evenly lg:justify-evenly md:justify-center sm:justify-center"
+    >
+      <div
+        class="text-group w-full sm:w-lg md:w-2xl lg:w-xs xl:w-sm p-8 h-72 sm:h-72 md:h-72 lg:h-2/4 xl:h-2/4 rounded-md bg-red-500 place-content-center items-center xl:items-start lg:items-start shadow-none flex flex-col xl:flex-col lg:flex-col"
+      >
+        <h5
+          class="mb-2 text-xl sm:text-2xl: md:text-3xl lg:text-2xl xl:text-4xl font-bold tracking-tight text-white group-hover:text-blue-950 text-center sm:text-center md:text-center lg:text-left xl:text-left"
+        >
+          FEATURED PRODUCTS.
+        </h5>
+
+        <hr
+          class="w-16 h-1 mb-10 sm:mb-10 md:mb-10 lg:mb-5 xl:mb-10 bg-gray-200 border-0 dark:bg-white"
+        />
+        <div
+          class="text-group-row flex flex-col sm:flex-col md:flex-row lg:flex-col xl:flex-col justify-around"
+        >
+          <div
+            class="liked-products w-28 md:w-44 sm:w-28 lg:w-44 xl:w-44 flex flex-row items-center place-content-start gap-3 mb-3 sm:mb-3 md:mb-0 lg:mb-2 xl:mb-10"
+          >
+            <img class="size-7" src="assets/like-icon-wh.png" alt="like icon" />
+            <p
+              class="w-24 sm:w-24 md:w-24 lg:w-20 xl:w-24 text-xs sm:text-xs md:text-base lg:text-xs xl:text-base font-bold text-white group-hover:text-gray-500"
+            >
+              Liked by 500+ users
+            </p>
+          </div>
+
+          <a
+            href="product.html"
+            class="other-product-btn flex flex-row justify-center lg:justify-start xl:justify-start items-center text-xs sm:text-xs md:text-sm lg:text-xs xl:text-sm w-28 sm:w-28 md:w-32 lg:w-32 xl:w-32 ml-0 xl:ml-4 lg:ml-4 px-0 py-4 underline underline-offset-4 font-medium text-center text-white bg-transparent focus:text-gray-200 hover:text-gray-300 group-hover:inline-flex"
+          >
+            Other Products
+            <svg
+              class="rtl:rotate-180 w-3.5 h-3.5 ms-2 mt-1"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div
+        class="group cursor-pointer flex flex-col items-center xl:gap-10 lg:gap-10 md:gap-5 sm:gap-5 gap-5 justify-evenly w-full py-3 px-3 h-72 sm:h-72 md:h-72 lg:h-2/4 xl:h-2/4 shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+      >
+        <a
+          class="group cursor-pointer flex flex-col items-center xl:gap-10 lg:gap-10 md:gap-5 sm:gap-5 gap-5 justify-evenly w-full h-72 sm:h-72 md:h-72 lg:h-2/4 xl:h-2/4 transition-all hover:bg-gray-100 rounded-md"
+          href="product details/asher armchair.html"
+          target="_blank"
+        >
+          <img
+            class="asher-armchair size-40 sm:size-52 md:size-52 lg:size-40 xl:size-60 p-0 mb-0 place-content-center"
+            src="assets/asher-armchair-img.png"
+            alt=""
+          />
+          <h5
+            class="text-base sm:text-base md:text-xl lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-left align-bottom"
+          >
+            Ashen Armchair.
+          </h5>
+        </a>
+      </div>
+
+      <div
+        class="group cursor-pointer flex flex-col items-center xl:gap-10 lg:gap-10 md:gap-5 sm:gap-5 gap-5 justify-evenly w-full py-3 px-3 h-72 sm:h-72 md:h-72 lg:h-2/4 xl:h-2/4 shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+      >
+        <a
+          class="group cursor-pointer flex flex-col items-center xl:gap-10 lg:gap-10 md:gap-5 sm:gap-5 gap-5 justify-evenly w-full h-72 sm:h-72 md:h-72 lg:h-2/4 xl:h-2/4 transition-all hover:bg-gray-100 rounded-md"
+          href="product details/chester couch.html"
+          target="_blank"
+        >
+          <img
+            class="asher-armchair size-40 sm:size-52 md:size-52 lg:size-40 xl:size-60 p-0 mb-0 place-content-center"
+            src="assets/chester-couch-img.png"
+            alt=""
+          />
+          <h5
+            class="text-base sm:text-base md:text-xl lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-left align-bottom"
+          >
+            Chester Couch.
+          </h5>
+        </a>
+      </div>
+
+      <div
+        class="group cursor-pointer flex flex-col items-center xl:gap-10 lg:gap-10 md:gap-5 sm:gap-5 gap-5 justify-evenly w-full py-3 px-3 h-72 sm:h-72 md:h-72 lg:h-2/4 xl:h-2/4 shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+      >
+        <a
+          class="group cursor-pointer flex flex-col items-center xl:gap-10 lg:gap-10 md:gap-5 sm:gap-5 gap-5 justify-evenly w-full h-72 sm:h-72 md:h-72 lg:h-2/4 xl:h-2/4 transition-all hover:bg-gray-100 rounded-md"
+          href="product details/cofy counter.html"
+          target="_blank"
+        >
+          <img
+            class="asher-armchair size-40 sm:size-52 md:size-52 lg:size-40 xl:size-60 p-0 mb-0 place-content-center"
+            src="assets/cofy-counter-img.png"
+            alt=""
+          />
+          <h5
+            class="text-base sm:text-base md:text-xl lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-left align-bottom"
+          >
+            Cofy Counter.
+          </h5>
+        </a>
+      </div>
+    </div>
+
+    <!-- Slider -->
+    <div
+      class="container h-full bg-white pb-32 flex grid-cols-2 grid-rows-2 gap-10 xl:gap-10 lg:gap-5 md:gap-5 sm:gap-5 px-0 sm:px-0 md:px-0 lg:px-0 xl:px-0 max-w-full flex-col sm:flex-col md:flex-col lg:flex-row xl:flex-row items-center xl:items-start justify-center xl:justify-evenly lg:justify-evenly md:justify-center sm:justify-center"
+    >
+      <div
+        id="default-carousel"
+        class="relative w-full rounded-none bg-white h-full"
+        data-carousel="slide"
+      >
+        <!-- Carousel wrapper -->
+        <div
+          class="relative h-96 xl:h-96 lg:h-96 md:h-96 sm:h-96 overflow-hidden"
+        >
+          <!-- Item 1 -->
+          <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+            <div
+              class="group-living bg-cover bg-center bg-no-repeat flex flex-col items-center xl:gap-10 lg:gap-10 md:gap-5 sm:gap-5 gap-5 justify-evenly w-full px-3 py-3 h-full sm:h-full md:h-full lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100"
+            >
+              <h5
+                class="w-2/3 text-center items-center text-sm sm:text-sm md:text-base lg:text-base xl:text-base font-normal tracking-wider text-white group-hover:text-gray-900 align-bottom"
+              >
+                Create a warm & welcoming
+              </h5>
+              <h5
+                class="w-2/3 text-center items-center text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-bold tracking-normal text-white group-hover:text-gray-900 align-bottom"
+              >
+                LIVING ROOM.
+              </h5>
+              <h5
+                class="w-2/3 text-center items-center text-sm sm:text-sm md:text-base lg:text-base xl:text-base font-normal tracking-wider text-white group-hover:text-gray-900 align-bottom"
+              >
+                With Homeify
+              </h5>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+            <div
+              class="group-kitchen bg-cover bg-center bg-no-repeat flex flex-col items-center xl:gap-10 lg:gap-10 md:gap-5 sm:gap-5 gap-5 justify-evenly w-full py-3 px-3 h-full sm:h-full md:h-full lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100"
+            >
+              <h5
+                class="w-2/3 text-center items-center text-sm sm:text-sm md:text-base lg:text-base xl:text-base font-normal tracking-wider text-white group-hover:text-gray-900 align-bottom"
+              >
+                Create a spotless & sparkling
+              </h5>
+              <h5
+                class="w-2/3 text-center items-center text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-bold tracking-normal text-white group-hover:text-gray-900 align-bottom"
+              >
+                KITCHEN.
+              </h5>
+              <h5
+                class="w-2/3 text-center items-center text-sm sm:text-sm md:text-base lg:text-base xl:text-base font-normal tracking-wider text-white group-hover:text-gray-900 align-bottom"
+              >
+                With Homeify
+              </h5>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+            <div
+              class="group-bed bg-cover bg-center bg-no-repeat flex flex-col items-center xl:gap-10 lg:gap-10 md:gap-5 sm:gap-5 gap-5 justify-evenly w-full py-3 px-3 h-full sm:h-full md:h-full lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100"
+            >
+              <h5
+                class="w-2/3 text-center items-center text-sm sm:text-sm md:text-base lg:text-base xl:text-base font-normal tracking-wider text-white group-hover:text-gray-900 align-bottom"
+              >
+                Create a comfy & pleasent
+              </h5>
+              <h5
+                class="w-2/3 text-center items-center text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-bold tracking-normal text-white group-hover:text-gray-900 align-bottom"
+              >
+                BEDROOM.
+              </h5>
+              <h5
+                class="w-2/3 text-center items-center text-sm sm:text-sm md:text-base lg:text-base xl:text-base font-normal tracking-wider text-white group-hover:text-gray-900 align-bottom"
+              >
+                With Homeify
+              </h5>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+            <div
+              class="group-bath bg-cover bg-center bg-no-repeat flex flex-col items-center xl:gap-10 lg:gap-10 md:gap-5 sm:gap-5 gap-5 justify-evenly w-full py-3 px-3 h-full sm:h-full md:h-full lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100"
+            >
+              <h5
+                class="w-2/3 text-center items-center text-sm sm:text-sm md:text-base lg:text-base xl:text-base font-normal tracking-wider text-white group-hover:text-gray-900 align-bottom"
+              >
+                Create a sleek & modern
+              </h5>
+              <h5
+                class="w-2/3 text-center items-center text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-bold tracking-normal text-white group-hover:text-gray-900 align-bottom"
+              >
+                BATHROOM.
+              </h5>
+              <h5
+                class="w-2/3 text-center items-center text-sm sm:text-sm md:text-base lg:text-base xl:text-base font-normal tracking-wider text-white group-hover:text-gray-900 align-bottom"
+              >
+                With Homeify
+              </h5>
+            </div>
+          </div>
+        </div>
+        <!-- Slider indicators -->
+        <div
+          class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
+        >
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="true"
+            aria-label="Slide 1"
+            data-carousel-slide-to="0"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 2"
+            data-carousel-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 3"
+            data-carousel-slide-to="2"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 4"
+            data-carousel-slide-to="3"
+          ></button>
+        </div>
+        <!-- Slider controls -->
+        <button
+          type="button"
+          class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-prev
+        >
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-900/30 group-hover:bg-gray-900/50 group-focus:ring-2 group-focus:ring-gray-900 group-focus:outline-none"
+          >
+            <svg
+              class="w-4 h-4 text-gray-900 rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 1 1 5l4 4"
+              />
+            </svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+        <button
+          type="button"
+          class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-next
+        >
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-900/30 group-hover:bg-gray-900/50 group-focus:ring-2 group-focus:ring-gray-900 group-focus:outline-none"
+          >
+            <svg
+              class="w-4 h-4 text-gray-900 rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 9 4-4-4-4"
+              />
+            </svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Our Products -->
+
+    <!-- tabs -->
+    <div
+      class="container w-full h-full bg-white pb-16 flex flex-col gap-10 xl:gap-10 lg:gap-5 md:gap-5 sm:gap-5 px-2 sm:px-2 md:px-5 lg:px-5 xl:px-5 max-w-full items-center xl:items-center justify-center xl:justify-evenly lg:justify-evenly md:justify-center sm:justify-center"
+    >
+      <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+        <ul
+          class="flex justify-center flex-wrap -mb-px text-sm font-medium text-center"
+          id="default-styled-tab"
+          data-tabs-toggle="#default-styled-tab-content"
+          data-tabs-active-classes="text-red-500 hover:text-red-500 border-red-500 font-bold"
+          data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300"
+          role="tablist"
+        >
+          <li class="me-2" role="presentation">
+            <button
+              class="inline-block p-4 border-b-2 rounded-t-lg"
+              id="new-arrival-styled-tab"
+              data-tabs-target="#styled-new-arrival"
+              type="button"
+              role="tab"
+              aria-controls="new-arrival"
+              aria-selected="false"
+            >
+              New Arrival
+            </button>
+          </li>
+          <li class="me-2" role="presentation">
+            <button
+              class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+              id="best-sellers-styled-tab"
+              data-tabs-target="#styled-best-sellers"
+              type="button"
+              role="tab"
+              aria-controls="best-sellers"
+              aria-selected="false"
+            >
+              Best Sellers
+            </button>
+          </li>
+          <li class="me-2" role="presentation">
+            <span class="absolute flex h-2 w-2 translate-x-24 translate-y-3">
+              <span
+                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-90"
+              ></span>
+              <span
+                class="relative inline-flex rounded-full h-2 w-2 bg-red-500"
+              ></span>
+            </span>
+            <button
+              class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+              id="last-chance-styled-tab"
+              data-tabs-target="#styled-last-chance"
+              type="button"
+              role="tab"
+              aria-controls="last-chance"
+              aria-selected="false"
+            >
+              Last Chance
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- content -->
+      <div id="default-styled-tab-content">
+        <!-- new-arrival -->
+        <div
+          class="hidden p-4 rounded-lg bg-white"
+          id="styled-new-arrival"
+          role="tabpanel"
+          aria-labelledby="new-arrival-tab"
+        >
+          <div
+            class="new-arrival h-full bg-white py-0 grid xl:grid-cols-4 xl:grid-rows-4 lg:grid-cols-4 lg:grid-rows-4 md:grid-cols-4 md:grid-rows-4 sm:grid-cols-2 sm:grid-rows-8 grid-cols-2 grid-rows-8 sm:grid md:grid lg:grid xl:grid gap-5 xl:gap-10 lg:gap-5 md:gap-5 sm:gap-5 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-5 max-w-full flex-col sm:flex-col md:flex-col lg:flex-row xl:flex-row items-start xl:items-start justify-center xl:justify-evenly lg:justify-evenly md:justify-center sm:justify-center"
+          >
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/season stint.html"
+                target="_blank"
+              >
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/season-stint-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★☆☆ (300+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Season Stint.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    $ 25.00
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/season stint.html"
+                target="_blank"
+              >
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/season-stint-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★☆☆ (300+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Season Stint.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    $ 25.00
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/season stint.html"
+                target="_blank"
+              >
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/season-stint-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★☆☆ (300+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Season Stint.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    $ 25.00
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/season stint.html"
+                target="_blank"
+              >
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/season-stint-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★☆☆ (300+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Season Stint.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    $ 25.00
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/season stint.html"
+                target="_blank"
+              >
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/season-stint-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★☆☆ (300+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Season Stint.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    $ 25.00
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/season stint.html"
+                target="_blank"
+              >
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/season-stint-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★☆☆ (300+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Season Stint.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    $ 25.00
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/season stint.html"
+                target="_blank"
+              >
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/season-stint-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★☆☆ (300+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Season Stint.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    $ 25.00
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/season stint.html"
+                target="_blank"
+              >
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/season-stint-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★☆☆ (300+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Season Stint.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    $ 25.00
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/season stint.html"
+                target="_blank"
+              >
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/season-stint-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★☆☆ (300+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Season Stint.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    $ 25.00
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/season stint.html"
+                target="_blank"
+              >
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/season-stint-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★☆☆ (300+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Season Stint.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    $ 25.00
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/season stint.html"
+                target="_blank"
+              >
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/season-stint-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★☆☆ (300+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Season Stint.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    $ 25.00
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/season stint.html"
+                target="_blank"
+              >
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/season-stint-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★☆☆ (300+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Season Stint.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    $ 25.00
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/season stint.html"
+                target="_blank"
+              >
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/season-stint-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★☆☆ (300+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Season Stint.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    $ 25.00
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/season stint.html"
+                target="_blank"
+              >
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/season-stint-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★☆☆ (300+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Season Stint.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    $ 25.00
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/season stint.html"
+                target="_blank"
+              >
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/season-stint-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★☆☆ (300+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Season Stint.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    $ 25.00
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/season stint.html"
+                target="_blank"
+              >
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/season-stint-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★☆☆ (300+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Season Stint.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    $ 25.00
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- best-sellers -->
+        <div
+          class="hidden p-4 rounded-lg bg-white"
+          id="styled-best-sellers"
+          role="tabpanel"
+          aria-labelledby="best-sellers-tab"
+        >
+          <div
+            class="best-sellers h-full bg-white py-0 grid xl:grid-cols-4 xl:grid-rows-4 lg:grid-cols-4 lg:grid-rows-4 md:grid-cols-4 md:grid-rows-4 sm:grid-cols-2 sm:grid-rows-8 grid-cols-2 grid-rows-8 sm:grid md:grid lg:grid xl:grid gap-10 xl:gap-10 lg:gap-5 md:gap-5 sm:gap-5 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-5 max-w-full flex-col sm:flex-col md:flex-col lg:flex-row xl:flex-row items-center xl:items-start justify-center xl:justify-evenly lg:justify-evenly md:justify-center sm:justify-center"
+          >
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/shelving stor.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-kuning place-content-end bg-yellow-500 w-auto h-auto xl:h-12 lg:h-12 md:h-12 p-1 absolute xl:-translate-x-24 xl:-translate-y-40 lg:-translate-x-16 lg:-translate-y-28 md:-translate-x-14 md:-translate-y-24 sm:-translate-x-12 sm:-translate-y-24 -translate-x-10 -translate-y-24"
+                >
+                  <p
+                    class="text-white text-sm sm:text-sm md:text-sm lg:text-lg xl:text-xl text-center"
+                  >
+                    ★
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/shelving-stor-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-yellow-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★★ (700+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Shelving Stor.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    $ 65.00
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/shelving stor.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-kuning place-content-end bg-yellow-500 w-auto h-auto xl:h-12 lg:h-12 md:h-12 p-1 absolute xl:-translate-x-24 xl:-translate-y-40 lg:-translate-x-16 lg:-translate-y-28 md:-translate-x-14 md:-translate-y-24 sm:-translate-x-12 sm:-translate-y-24 -translate-x-10 -translate-y-24"
+                >
+                  <p
+                    class="text-white text-sm sm:text-sm md:text-sm lg:text-lg xl:text-xl text-center"
+                  >
+                    ★
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/shelving-stor-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-yellow-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★★ (700+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Shelving Stor.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    $ 65.00
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/shelving stor.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-kuning place-content-end bg-yellow-500 w-auto h-auto xl:h-12 lg:h-12 md:h-12 p-1 absolute xl:-translate-x-24 xl:-translate-y-40 lg:-translate-x-16 lg:-translate-y-28 md:-translate-x-14 md:-translate-y-24 sm:-translate-x-12 sm:-translate-y-24 -translate-x-10 -translate-y-24"
+                >
+                  <p
+                    class="text-white text-sm sm:text-sm md:text-sm lg:text-lg xl:text-xl text-center"
+                  >
+                    ★
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/shelving-stor-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-yellow-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★★ (700+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Shelving Stor.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    $ 65.00
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/shelving stor.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-kuning place-content-end bg-yellow-500 w-auto h-auto xl:h-12 lg:h-12 md:h-12 p-1 absolute xl:-translate-x-24 xl:-translate-y-40 lg:-translate-x-16 lg:-translate-y-28 md:-translate-x-14 md:-translate-y-24 sm:-translate-x-12 sm:-translate-y-24 -translate-x-10 -translate-y-24"
+                >
+                  <p
+                    class="text-white text-sm sm:text-sm md:text-sm lg:text-lg xl:text-xl text-center"
+                  >
+                    ★
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/shelving-stor-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-yellow-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★★ (700+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Shelving Stor.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    $ 65.00
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/shelving stor.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-kuning place-content-end bg-yellow-500 w-auto h-auto xl:h-12 lg:h-12 md:h-12 p-1 absolute xl:-translate-x-24 xl:-translate-y-40 lg:-translate-x-16 lg:-translate-y-28 md:-translate-x-14 md:-translate-y-24 sm:-translate-x-12 sm:-translate-y-24 -translate-x-10 -translate-y-24"
+                >
+                  <p
+                    class="text-white text-sm sm:text-sm md:text-sm lg:text-lg xl:text-xl text-center"
+                  >
+                    ★
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/shelving-stor-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-yellow-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★★ (700+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Shelving Stor.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    $ 65.00
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/shelving stor.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-kuning place-content-end bg-yellow-500 w-auto h-auto xl:h-12 lg:h-12 md:h-12 p-1 absolute xl:-translate-x-24 xl:-translate-y-40 lg:-translate-x-16 lg:-translate-y-28 md:-translate-x-14 md:-translate-y-24 sm:-translate-x-12 sm:-translate-y-24 -translate-x-10 -translate-y-24"
+                >
+                  <p
+                    class="text-white text-sm sm:text-sm md:text-sm lg:text-lg xl:text-xl text-center"
+                  >
+                    ★
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/shelving-stor-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-yellow-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★★ (700+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Shelving Stor.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    $ 65.00
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/shelving stor.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-kuning place-content-end bg-yellow-500 w-auto h-auto xl:h-12 lg:h-12 md:h-12 p-1 absolute xl:-translate-x-24 xl:-translate-y-40 lg:-translate-x-16 lg:-translate-y-28 md:-translate-x-14 md:-translate-y-24 sm:-translate-x-12 sm:-translate-y-24 -translate-x-10 -translate-y-24"
+                >
+                  <p
+                    class="text-white text-sm sm:text-sm md:text-sm lg:text-lg xl:text-xl text-center"
+                  >
+                    ★
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/shelving-stor-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-yellow-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★★ (700+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Shelving Stor.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    $ 65.00
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/shelving stor.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-kuning place-content-end bg-yellow-500 w-auto h-auto xl:h-12 lg:h-12 md:h-12 p-1 absolute xl:-translate-x-24 xl:-translate-y-40 lg:-translate-x-16 lg:-translate-y-28 md:-translate-x-14 md:-translate-y-24 sm:-translate-x-12 sm:-translate-y-24 -translate-x-10 -translate-y-24"
+                >
+                  <p
+                    class="text-white text-sm sm:text-sm md:text-sm lg:text-lg xl:text-xl text-center"
+                  >
+                    ★
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/shelving-stor-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-yellow-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★★ (700+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Shelving Stor.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    $ 65.00
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/shelving stor.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-kuning place-content-end bg-yellow-500 w-auto h-auto xl:h-12 lg:h-12 md:h-12 p-1 absolute xl:-translate-x-24 xl:-translate-y-40 lg:-translate-x-16 lg:-translate-y-28 md:-translate-x-14 md:-translate-y-24 sm:-translate-x-12 sm:-translate-y-24 -translate-x-10 -translate-y-24"
+                >
+                  <p
+                    class="text-white text-sm sm:text-sm md:text-sm lg:text-lg xl:text-xl text-center"
+                  >
+                    ★
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/shelving-stor-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-yellow-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★★ (700+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Shelving Stor.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    $ 65.00
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/shelving stor.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-kuning place-content-end bg-yellow-500 w-auto h-auto xl:h-12 lg:h-12 md:h-12 p-1 absolute xl:-translate-x-24 xl:-translate-y-40 lg:-translate-x-16 lg:-translate-y-28 md:-translate-x-14 md:-translate-y-24 sm:-translate-x-12 sm:-translate-y-24 -translate-x-10 -translate-y-24"
+                >
+                  <p
+                    class="text-white text-sm sm:text-sm md:text-sm lg:text-lg xl:text-xl text-center"
+                  >
+                    ★
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/shelving-stor-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-yellow-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★★ (700+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Shelving Stor.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    $ 65.00
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/shelving stor.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-kuning place-content-end bg-yellow-500 w-auto h-auto xl:h-12 lg:h-12 md:h-12 p-1 absolute xl:-translate-x-24 xl:-translate-y-40 lg:-translate-x-16 lg:-translate-y-28 md:-translate-x-14 md:-translate-y-24 sm:-translate-x-12 sm:-translate-y-24 -translate-x-10 -translate-y-24"
+                >
+                  <p
+                    class="text-white text-sm sm:text-sm md:text-sm lg:text-lg xl:text-xl text-center"
+                  >
+                    ★
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/shelving-stor-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-yellow-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★★ (700+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Shelving Stor.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    $ 65.00
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/shelving stor.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-kuning place-content-end bg-yellow-500 w-auto h-auto xl:h-12 lg:h-12 md:h-12 p-1 absolute xl:-translate-x-24 xl:-translate-y-40 lg:-translate-x-16 lg:-translate-y-28 md:-translate-x-14 md:-translate-y-24 sm:-translate-x-12 sm:-translate-y-24 -translate-x-10 -translate-y-24"
+                >
+                  <p
+                    class="text-white text-sm sm:text-sm md:text-sm lg:text-lg xl:text-xl text-center"
+                  >
+                    ★
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/shelving-stor-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-yellow-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★★ (700+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Shelving Stor.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    $ 65.00
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/shelving stor.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-kuning place-content-end bg-yellow-500 w-auto h-auto xl:h-12 lg:h-12 md:h-12 p-1 absolute xl:-translate-x-24 xl:-translate-y-40 lg:-translate-x-16 lg:-translate-y-28 md:-translate-x-14 md:-translate-y-24 sm:-translate-x-12 sm:-translate-y-24 -translate-x-10 -translate-y-24"
+                >
+                  <p
+                    class="text-white text-sm sm:text-sm md:text-sm lg:text-lg xl:text-xl text-center"
+                  >
+                    ★
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/shelving-stor-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-yellow-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★★ (700+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Shelving Stor.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    $ 65.00
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/shelving stor.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-kuning place-content-end bg-yellow-500 w-auto h-auto xl:h-12 lg:h-12 md:h-12 p-1 absolute xl:-translate-x-24 xl:-translate-y-40 lg:-translate-x-16 lg:-translate-y-28 md:-translate-x-14 md:-translate-y-24 sm:-translate-x-12 sm:-translate-y-24 -translate-x-10 -translate-y-24"
+                >
+                  <p
+                    class="text-white text-sm sm:text-sm md:text-sm lg:text-lg xl:text-xl text-center"
+                  >
+                    ★
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/shelving-stor-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-yellow-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★★ (700+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Shelving Stor.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    $ 65.00
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/shelving stor.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-kuning place-content-end bg-yellow-500 w-auto h-auto xl:h-12 lg:h-12 md:h-12 p-1 absolute xl:-translate-x-24 xl:-translate-y-40 lg:-translate-x-16 lg:-translate-y-28 md:-translate-x-14 md:-translate-y-24 sm:-translate-x-12 sm:-translate-y-24 -translate-x-10 -translate-y-24"
+                >
+                  <p
+                    class="text-white text-sm sm:text-sm md:text-sm lg:text-lg xl:text-xl text-center"
+                  >
+                    ★
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/shelving-stor-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-yellow-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★★ (700+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Shelving Stor.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    $ 65.00
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/shelving stor.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-kuning place-content-end bg-yellow-500 w-auto h-auto xl:h-12 lg:h-12 md:h-12 p-1 absolute xl:-translate-x-24 xl:-translate-y-40 lg:-translate-x-16 lg:-translate-y-28 md:-translate-x-14 md:-translate-y-24 sm:-translate-x-12 sm:-translate-y-24 -translate-x-10 -translate-y-24"
+                >
+                  <p
+                    class="text-white text-sm sm:text-sm md:text-sm lg:text-lg xl:text-xl text-center"
+                  >
+                    ★
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/shelving-stor-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-yellow-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★★ (700+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Shelving Stor.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    $ 65.00
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/shelving stor.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-kuning place-content-end bg-yellow-500 w-auto h-auto xl:h-12 lg:h-12 md:h-12 p-1 absolute xl:-translate-x-24 xl:-translate-y-40 lg:-translate-x-16 lg:-translate-y-28 md:-translate-x-14 md:-translate-y-24 sm:-translate-x-12 sm:-translate-y-24 -translate-x-10 -translate-y-24"
+                >
+                  <p
+                    class="text-white text-sm sm:text-sm md:text-sm lg:text-lg xl:text-xl text-center"
+                  >
+                    ★
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/shelving-stor-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-yellow-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★★ (700+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Shelving Stor.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    $ 65.00
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/shelving stor.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-kuning place-content-end bg-yellow-500 w-auto h-auto xl:h-12 lg:h-12 md:h-12 p-1 absolute xl:-translate-x-24 xl:-translate-y-40 lg:-translate-x-16 lg:-translate-y-28 md:-translate-x-14 md:-translate-y-24 sm:-translate-x-12 sm:-translate-y-24 -translate-x-10 -translate-y-24"
+                >
+                  <p
+                    class="text-white text-sm sm:text-sm md:text-sm lg:text-lg xl:text-xl text-center"
+                  >
+                    ★
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/shelving-stor-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-yellow-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★★ (700+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Shelving Stor.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    $ 65.00
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/shelving stor.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-kuning place-content-end bg-yellow-500 w-auto h-auto xl:h-12 lg:h-12 md:h-12 p-1 absolute xl:-translate-x-24 xl:-translate-y-40 lg:-translate-x-16 lg:-translate-y-28 md:-translate-x-14 md:-translate-y-24 sm:-translate-x-12 sm:-translate-y-24 -translate-x-10 -translate-y-24"
+                >
+                  <p
+                    class="text-white text-sm sm:text-sm md:text-sm lg:text-lg xl:text-xl text-center"
+                  >
+                    ★
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/shelving-stor-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-yellow-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★★ (700+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Shelving Stor.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    $ 65.00
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/shelving stor.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-kuning place-content-end bg-yellow-500 w-auto h-auto xl:h-12 lg:h-12 md:h-12 p-1 absolute xl:-translate-x-24 xl:-translate-y-40 lg:-translate-x-16 lg:-translate-y-28 md:-translate-x-14 md:-translate-y-24 sm:-translate-x-12 sm:-translate-y-24 -translate-x-10 -translate-y-24"
+                >
+                  <p
+                    class="text-white text-sm sm:text-sm md:text-sm lg:text-lg xl:text-xl text-center"
+                  >
+                    ★
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/shelving-stor-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-yellow-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★★ (700+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Shelving Stor.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    $ 65.00
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- last-chance -->
+        <div
+          class="hidden p-4 rounded-lg bg-white"
+          id="styled-last-chance"
+          role="tabpanel"
+          aria-labelledby="last-chance-tab"
+        >
+          <div
+            class="last-chance h-full bg-white py-0 grid xl:grid-cols-4 xl:grid-rows-4 lg:grid-cols-4 lg:grid-rows-4 md:grid-cols-4 md:grid-rows-4 sm:grid-cols-2 sm:grid-rows-8 grid-cols-2 grid-rows-8 sm:grid md:grid lg:grid xl:grid gap-10 xl:gap-10 lg:gap-5 md:gap-5 sm:gap-5 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-5 max-w-full flex-col sm:flex-col md:flex-col lg:flex-row xl:flex-row items-center xl:items-start justify-center xl:justify-evenly lg:justify-evenly md:justify-center sm:justify-center"
+          >
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/lumin light.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-merah bg-red-500 w-auto h-auto p-1 absolute xl:-translate-x-28 xl:-translate-y-36 lg:-translate-x-16 lg:-translate-y-24 md:-translate-x-16 md:-translate-y-20 sm:-translate-x-14 sm:-translate-y-20 -translate-x-14 -translate-y-16"
+                >
+                  <p
+                    class="text-white text-xs sm:text-xs md:text-sm lg:text-base xl:text-base"
+                  >
+                    50% off
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/lumin-light-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★☆ (400+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Lumin Light.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-bold tracking-normal text-red-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    <span
+                      class="text-xs sm:text-xs md:text-xs lg:text-xs xl:text-sm font-normal tracking-normal text-gray-400 group-hover:text-gray-700 text-center align-middle"
+                      >$ 45.00</span
+                    >
+                    $ 22.50
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/lumin light.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-merah bg-red-500 w-auto h-auto p-1 absolute xl:-translate-x-28 xl:-translate-y-36 lg:-translate-x-16 lg:-translate-y-24 md:-translate-x-16 md:-translate-y-20 sm:-translate-x-14 sm:-translate-y-20 -translate-x-14 -translate-y-16"
+                >
+                  <p
+                    class="text-white text-xs sm:text-xs md:text-sm lg:text-base xl:text-base"
+                  >
+                    50% off
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/lumin-light-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★☆ (400+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Lumin Light.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-bold tracking-normal text-red-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    <span
+                      class="text-xs sm:text-xs md:text-xs lg:text-xs xl:text-sm font-normal tracking-normal text-gray-400 group-hover:text-gray-700 text-center align-middle"
+                      >$ 45.00</span
+                    >
+                    $ 22.50
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/lumin light.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-merah bg-red-500 w-auto h-auto p-1 absolute xl:-translate-x-28 xl:-translate-y-36 lg:-translate-x-16 lg:-translate-y-24 md:-translate-x-16 md:-translate-y-20 sm:-translate-x-14 sm:-translate-y-20 -translate-x-14 -translate-y-16"
+                >
+                  <p
+                    class="text-white text-xs sm:text-xs md:text-sm lg:text-base xl:text-base"
+                  >
+                    50% off
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/lumin-light-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★☆ (400+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Lumin Light.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-bold tracking-normal text-red-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    <span
+                      class="text-xs sm:text-xs md:text-xs lg:text-xs xl:text-sm font-normal tracking-normal text-gray-400 group-hover:text-gray-700 text-center align-middle"
+                      >$ 45.00</span
+                    >
+                    $ 22.50
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/lumin light.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-merah bg-red-500 w-auto h-auto p-1 absolute xl:-translate-x-28 xl:-translate-y-36 lg:-translate-x-16 lg:-translate-y-24 md:-translate-x-16 md:-translate-y-20 sm:-translate-x-14 sm:-translate-y-20 -translate-x-14 -translate-y-16"
+                >
+                  <p
+                    class="text-white text-xs sm:text-xs md:text-sm lg:text-base xl:text-base"
+                  >
+                    50% off
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/lumin-light-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★☆ (400+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Lumin Light.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-bold tracking-normal text-red-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    <span
+                      class="text-xs sm:text-xs md:text-xs lg:text-xs xl:text-sm font-normal tracking-normal text-gray-400 group-hover:text-gray-700 text-center align-middle"
+                      >$ 45.00</span
+                    >
+                    $ 22.50
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/lumin light.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-merah bg-red-500 w-auto h-auto p-1 absolute xl:-translate-x-28 xl:-translate-y-36 lg:-translate-x-16 lg:-translate-y-24 md:-translate-x-16 md:-translate-y-20 sm:-translate-x-14 sm:-translate-y-20 -translate-x-14 -translate-y-16"
+                >
+                  <p
+                    class="text-white text-xs sm:text-xs md:text-sm lg:text-base xl:text-base"
+                  >
+                    50% off
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/lumin-light-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★☆ (400+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Lumin Light.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-bold tracking-normal text-red-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    <span
+                      class="text-xs sm:text-xs md:text-xs lg:text-xs xl:text-sm font-normal tracking-normal text-gray-400 group-hover:text-gray-700 text-center align-middle"
+                      >$ 45.00</span
+                    >
+                    $ 22.50
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/lumin light.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-merah bg-red-500 w-auto h-auto p-1 absolute xl:-translate-x-28 xl:-translate-y-36 lg:-translate-x-16 lg:-translate-y-24 md:-translate-x-16 md:-translate-y-20 sm:-translate-x-14 sm:-translate-y-20 -translate-x-14 -translate-y-16"
+                >
+                  <p
+                    class="text-white text-xs sm:text-xs md:text-sm lg:text-base xl:text-base"
+                  >
+                    50% off
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/lumin-light-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★☆ (400+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Lumin Light.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-bold tracking-normal text-red-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    <span
+                      class="text-xs sm:text-xs md:text-xs lg:text-xs xl:text-sm font-normal tracking-normal text-gray-400 group-hover:text-gray-700 text-center align-middle"
+                      >$ 45.00</span
+                    >
+                    $ 22.50
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/lumin light.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-merah bg-red-500 w-auto h-auto p-1 absolute xl:-translate-x-28 xl:-translate-y-36 lg:-translate-x-16 lg:-translate-y-24 md:-translate-x-16 md:-translate-y-20 sm:-translate-x-14 sm:-translate-y-20 -translate-x-14 -translate-y-16"
+                >
+                  <p
+                    class="text-white text-xs sm:text-xs md:text-sm lg:text-base xl:text-base"
+                  >
+                    50% off
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/lumin-light-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★☆ (400+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Lumin Light.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-bold tracking-normal text-red-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    <span
+                      class="text-xs sm:text-xs md:text-xs lg:text-xs xl:text-sm font-normal tracking-normal text-gray-400 group-hover:text-gray-700 text-center align-middle"
+                      >$ 45.00</span
+                    >
+                    $ 22.50
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/lumin light.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-merah bg-red-500 w-auto h-auto p-1 absolute xl:-translate-x-28 xl:-translate-y-36 lg:-translate-x-16 lg:-translate-y-24 md:-translate-x-16 md:-translate-y-20 sm:-translate-x-14 sm:-translate-y-20 -translate-x-14 -translate-y-16"
+                >
+                  <p
+                    class="text-white text-xs sm:text-xs md:text-sm lg:text-base xl:text-base"
+                  >
+                    50% off
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/lumin-light-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★☆ (400+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Lumin Light.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-bold tracking-normal text-red-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    <span
+                      class="text-xs sm:text-xs md:text-xs lg:text-xs xl:text-sm font-normal tracking-normal text-gray-400 group-hover:text-gray-700 text-center align-middle"
+                      >$ 45.00</span
+                    >
+                    $ 22.50
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/lumin light.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-merah bg-red-500 w-auto h-auto p-1 absolute xl:-translate-x-28 xl:-translate-y-36 lg:-translate-x-16 lg:-translate-y-24 md:-translate-x-16 md:-translate-y-20 sm:-translate-x-14 sm:-translate-y-20 -translate-x-14 -translate-y-16"
+                >
+                  <p
+                    class="text-white text-xs sm:text-xs md:text-sm lg:text-base xl:text-base"
+                  >
+                    50% off
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/lumin-light-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★☆ (400+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Lumin Light.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-bold tracking-normal text-red-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    <span
+                      class="text-xs sm:text-xs md:text-xs lg:text-xs xl:text-sm font-normal tracking-normal text-gray-400 group-hover:text-gray-700 text-center align-middle"
+                      >$ 45.00</span
+                    >
+                    $ 22.50
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/lumin light.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-merah bg-red-500 w-auto h-auto p-1 absolute xl:-translate-x-28 xl:-translate-y-36 lg:-translate-x-16 lg:-translate-y-24 md:-translate-x-16 md:-translate-y-20 sm:-translate-x-14 sm:-translate-y-20 -translate-x-14 -translate-y-16"
+                >
+                  <p
+                    class="text-white text-xs sm:text-xs md:text-sm lg:text-base xl:text-base"
+                  >
+                    50% off
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/lumin-light-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★☆ (400+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Lumin Light.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-bold tracking-normal text-red-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    <span
+                      class="text-xs sm:text-xs md:text-xs lg:text-xs xl:text-sm font-normal tracking-normal text-gray-400 group-hover:text-gray-700 text-center align-middle"
+                      >$ 45.00</span
+                    >
+                    $ 22.50
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/lumin light.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-merah bg-red-500 w-auto h-auto p-1 absolute xl:-translate-x-28 xl:-translate-y-36 lg:-translate-x-16 lg:-translate-y-24 md:-translate-x-16 md:-translate-y-20 sm:-translate-x-14 sm:-translate-y-20 -translate-x-14 -translate-y-16"
+                >
+                  <p
+                    class="text-white text-xs sm:text-xs md:text-sm lg:text-base xl:text-base"
+                  >
+                    50% off
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/lumin-light-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★☆ (400+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Lumin Light.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-bold tracking-normal text-red-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    <span
+                      class="text-xs sm:text-xs md:text-xs lg:text-xs xl:text-sm font-normal tracking-normal text-gray-400 group-hover:text-gray-700 text-center align-middle"
+                      >$ 45.00</span
+                    >
+                    $ 22.50
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/lumin light.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-merah bg-red-500 w-auto h-auto p-1 absolute xl:-translate-x-28 xl:-translate-y-36 lg:-translate-x-16 lg:-translate-y-24 md:-translate-x-16 md:-translate-y-20 sm:-translate-x-14 sm:-translate-y-20 -translate-x-14 -translate-y-16"
+                >
+                  <p
+                    class="text-white text-xs sm:text-xs md:text-sm lg:text-base xl:text-base"
+                  >
+                    50% off
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/lumin-light-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★☆ (400+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Lumin Light.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-bold tracking-normal text-red-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    <span
+                      class="text-xs sm:text-xs md:text-xs lg:text-xs xl:text-sm font-normal tracking-normal text-gray-400 group-hover:text-gray-700 text-center align-middle"
+                      >$ 45.00</span
+                    >
+                    $ 22.50
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/lumin light.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-merah bg-red-500 w-auto h-auto p-1 absolute xl:-translate-x-28 xl:-translate-y-36 lg:-translate-x-16 lg:-translate-y-24 md:-translate-x-16 md:-translate-y-20 sm:-translate-x-14 sm:-translate-y-20 -translate-x-14 -translate-y-16"
+                >
+                  <p
+                    class="text-white text-xs sm:text-xs md:text-sm lg:text-base xl:text-base"
+                  >
+                    50% off
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/lumin-light-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★☆ (400+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Lumin Light.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-bold tracking-normal text-red-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    <span
+                      class="text-xs sm:text-xs md:text-xs lg:text-xs xl:text-sm font-normal tracking-normal text-gray-400 group-hover:text-gray-700 text-center align-middle"
+                      >$ 45.00</span
+                    >
+                    $ 22.50
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/lumin light.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-merah bg-red-500 w-auto h-auto p-1 absolute xl:-translate-x-28 xl:-translate-y-36 lg:-translate-x-16 lg:-translate-y-24 md:-translate-x-16 md:-translate-y-20 sm:-translate-x-14 sm:-translate-y-20 -translate-x-14 -translate-y-16"
+                >
+                  <p
+                    class="text-white text-xs sm:text-xs md:text-sm lg:text-base xl:text-base"
+                  >
+                    50% off
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/lumin-light-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★☆ (400+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Lumin Light.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-bold tracking-normal text-red-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    <span
+                      class="text-xs sm:text-xs md:text-xs lg:text-xs xl:text-sm font-normal tracking-normal text-gray-400 group-hover:text-gray-700 text-center align-middle"
+                      >$ 45.00</span
+                    >
+                    $ 22.50
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/lumin light.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-merah bg-red-500 w-auto h-auto p-1 absolute xl:-translate-x-28 xl:-translate-y-36 lg:-translate-x-16 lg:-translate-y-24 md:-translate-x-16 md:-translate-y-20 sm:-translate-x-14 sm:-translate-y-20 -translate-x-14 -translate-y-16"
+                >
+                  <p
+                    class="text-white text-xs sm:text-xs md:text-sm lg:text-base xl:text-base"
+                  >
+                    50% off
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/lumin-light-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★☆ (400+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Lumin Light.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-bold tracking-normal text-red-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    <span
+                      class="text-xs sm:text-xs md:text-xs lg:text-xs xl:text-sm font-normal tracking-normal text-gray-400 group-hover:text-gray-700 text-center align-middle"
+                      >$ 45.00</span
+                    >
+                    $ 22.50
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/lumin light.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-merah bg-red-500 w-auto h-auto p-1 absolute xl:-translate-x-28 xl:-translate-y-36 lg:-translate-x-16 lg:-translate-y-24 md:-translate-x-16 md:-translate-y-20 sm:-translate-x-14 sm:-translate-y-20 -translate-x-14 -translate-y-16"
+                >
+                  <p
+                    class="text-white text-xs sm:text-xs md:text-sm lg:text-base xl:text-base"
+                  >
+                    50% off
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/lumin-light-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★☆ (400+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Lumin Light.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-bold tracking-normal text-red-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    <span
+                      class="text-xs sm:text-xs md:text-xs lg:text-xs xl:text-sm font-normal tracking-normal text-gray-400 group-hover:text-gray-700 text-center align-middle"
+                      >$ 45.00</span
+                    >
+                    $ 22.50
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/lumin light.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-merah bg-red-500 w-auto h-auto p-1 absolute xl:-translate-x-28 xl:-translate-y-36 lg:-translate-x-16 lg:-translate-y-24 md:-translate-x-16 md:-translate-y-20 sm:-translate-x-14 sm:-translate-y-20 -translate-x-14 -translate-y-16"
+                >
+                  <p
+                    class="text-white text-xs sm:text-xs md:text-sm lg:text-base xl:text-base"
+                  >
+                    50% off
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/lumin-light-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★☆ (400+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Lumin Light.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-bold tracking-normal text-red-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    <span
+                      class="text-xs sm:text-xs md:text-xs lg:text-xs xl:text-sm font-normal tracking-normal text-gray-400 group-hover:text-gray-700 text-center align-middle"
+                      >$ 45.00</span
+                    >
+                    $ 22.50
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/lumin light.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-merah bg-red-500 w-auto h-auto p-1 absolute xl:-translate-x-28 xl:-translate-y-36 lg:-translate-x-16 lg:-translate-y-24 md:-translate-x-16 md:-translate-y-20 sm:-translate-x-14 sm:-translate-y-20 -translate-x-14 -translate-y-16"
+                >
+                  <p
+                    class="text-white text-xs sm:text-xs md:text-sm lg:text-base xl:text-base"
+                  >
+                    50% off
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/lumin-light-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★☆ (400+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Lumin Light.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-bold tracking-normal text-red-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    <span
+                      class="text-xs sm:text-xs md:text-xs lg:text-xs xl:text-sm font-normal tracking-normal text-gray-400 group-hover:text-gray-700 text-center align-middle"
+                      >$ 45.00</span
+                    >
+                    $ 22.50
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/lumin light.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-merah bg-red-500 w-auto h-auto p-1 absolute xl:-translate-x-28 xl:-translate-y-36 lg:-translate-x-16 lg:-translate-y-24 md:-translate-x-16 md:-translate-y-20 sm:-translate-x-14 sm:-translate-y-20 -translate-x-14 -translate-y-16"
+                >
+                  <p
+                    class="text-white text-xs sm:text-xs md:text-sm lg:text-base xl:text-base"
+                  >
+                    50% off
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/lumin-light-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★☆ (400+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Lumin Light.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-bold tracking-normal text-red-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    <span
+                      class="text-xs sm:text-xs md:text-xs lg:text-xs xl:text-sm font-normal tracking-normal text-gray-400 group-hover:text-gray-700 text-center align-middle"
+                      >$ 45.00</span
+                    >
+                    $ 22.50
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full py-3 px-3 h-52 sm:h-52 md:h-60 lg:h-full xl:h-full shadow-2xl shadow-gray-900/50 hover:shadow-none transition-all hover:bg-gray-100 rounded-md"
+            >
+              <a
+                class="group flex flex-col items-center xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 gap-3 justify-center w-full h-52 sm:h-52 md:h-60 lg:h-full xl:h-full transition-all hover:bg-gray-100 rounded-md"
+                href="product details/lumin light.html"
+                target="_blank"
+              >
+                <div
+                  class="kotak-merah bg-red-500 w-auto h-auto p-1 absolute xl:-translate-x-28 xl:-translate-y-36 lg:-translate-x-16 lg:-translate-y-24 md:-translate-x-16 md:-translate-y-20 sm:-translate-x-14 sm:-translate-y-20 -translate-x-14 -translate-y-16"
+                >
+                  <p
+                    class="text-white text-xs sm:text-xs md:text-sm lg:text-base xl:text-base"
+                  >
+                    50% off
+                  </p>
+                </div>
+                <div class="product-img items-center bg-gray-300">
+                  <img
+                    class="asher-armchair size-32 sm:size-32 md:size-36 lg:size-40 xl:size-60 p-0 mb-0 place-content-center scale-90"
+                    src="assets/lumin-light-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-desc items-center">
+                  <p
+                    class="text-xs font-semibold tracking-normal text-gray-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    ★★★☆ (400+reviews)
+                  </p>
+                  <h5
+                    class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold tracking-normal text-black group-hover:text-gray-900 text-center align-middle"
+                  >
+                    Lumin Light.
+                  </h5>
+                  <p
+                    class="text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg font-bold tracking-normal text-red-500 group-hover:text-gray-900 text-center align-middle"
+                  >
+                    <span
+                      class="text-xs sm:text-xs md:text-xs lg:text-xs xl:text-sm font-normal tracking-normal text-gray-400 group-hover:text-gray-700 text-center align-middle"
+                      >$ 45.00</span
+                    >
+                    $ 22.50
+                  </p>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About <span>Homeify.</span></h3>
+          <p>
+            We are a local furniture company that spreads modern, simplistic,
+            and premium-quality furnitures throughout the world.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p>Email: homeify@gmail.com</p>
+          <p>Telepon: 123-1234-123</p>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <a href="https://www.facebook.com/">Facebook</a>
+          <a href="https://x.com/">Twitter</a>
+          <a href="https://www.instagram.com/">Instagram</a>
+        </div>
+        <div class="footer-section">
+          <h3>Sign Up</h3>
+          <form class="signup-form">
+            <input type="text" placeholder="Name" required />
+            <input type="email" placeholder="Email Adress" required />
+            <input type="password" placeholder="Password" required />
+            <button class="btn-daftar" type="submit">Sign Up</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Homeify. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+  </body>
+</html>
